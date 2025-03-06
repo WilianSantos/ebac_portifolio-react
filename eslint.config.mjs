@@ -11,26 +11,31 @@ export default [
   {languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
-  pluginReact.configs.flat.recommended,
 
   {
     files: ['**/*.{js,jsx}'],
+    extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
     plugins: {
-      'react-hooks': reactHooks,
-      'react': pluginReact,
+      reactHooks,
+      pluginReact,
+      tseslint,
      },
-    extends: ["plugin:prettier/recommended"],
-    settings: {
-      react: {
-        version: "detect" // Adicionado para especificar a versão do React
-      }
-    },
     rules: {
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
       "react/prop-types": "off",
       "react/react-in-jsx-scope": "off",
       "@typescript-eslint/explicit-module-boundary-types": "off",
+    },
+    settings: {
+      react: {
+        version: "detect" // Adicionado para especificar a versão do React
+      }
     }
   },
 ];
