@@ -15,7 +15,10 @@ export default [
 
   {
     files: ['**/*.{js,jsx}'],
-    plugins: { 'react-hooks': reactHooks },
+    plugins: {
+      'react-hooks': reactHooks,
+      'react': pluginReact,
+     },
     extends: ["plugin:prettier/recommended"],
     settings: {
       react: {
