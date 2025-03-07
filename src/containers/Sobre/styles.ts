@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const GithubSection = styled.div`
   margin: 32px 0 64px;
 
-img {
+  img {
     height: 157px;
 
     @media (max-width: 768px) {

@@ -1,7 +1,7 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
-import Paragrafo from "../Paragrafo"
-import Titulo from "../Titulo"
+import Paragrafo from '../Paragrafo'
+import Titulo from '../Titulo'
 
 const Card = styled.div`
   border: 1px solid ${({ theme }) => theme.corBorda};
@@ -19,9 +19,7 @@ const ButtonLink = styled.a`
 const Projeto = () => (
   <Card>
     <Titulo>Projeto lista de tarefas</Titulo>
-    <Paragrafo tipo="secundaria">
-      Lista de tarefas
-    </Paragrafo>
+    <Paragrafo tipo="secundaria">Lista de tarefas</Paragrafo>
     <ButtonLink href="">Ver projeto</ButtonLink>
   </Card>
 )

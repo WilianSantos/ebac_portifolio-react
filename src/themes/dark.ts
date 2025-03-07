@@ -6,4 +6,4 @@ const themeDark = {
   corBorda: '#c1c1c1'
 }
 
-export default themeDark;
+export default themeDark

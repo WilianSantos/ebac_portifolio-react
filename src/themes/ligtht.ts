@@ -6,12 +6,12 @@ const themeLight = {
   corBorda: '#c1c1c1'
 }
 
-export default themeLight;
+export default themeLight
 
 export type Theme = {
-  corPrincipal: string;
-  corSecundaria: string;
-  corFundo: string;
-  corFundoBotao: string;
-  corBorda: string;
+  corPrincipal: string
+  corSecundaria: string
+  corFundo: string
+  corFundoBotao: string
+  corBorda: string
 }

@@ -18,14 +18,13 @@ function App() {
     <ThemeProvider theme={isThemeLight ? themeLight : themeDark}>
       <GlobalStyle />
       <Container>
-        <Sidebar handleTheme={handleTheme}/>
-       <main>
-        <Sobre />
-        <Projetos />
-       </main>
-
+        <Sidebar handleTheme={handleTheme} />
+        <main>
+          <Sobre />
+          <Projetos />
+        </main>
       </Container>
-    </ThemeProvider >
+    </ThemeProvider>
   )
 }
 

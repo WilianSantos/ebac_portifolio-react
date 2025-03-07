@@ -1,6 +1,5 @@
-import styled from "styled-components";
-import { Paragrafo } from "../../components/Paragrafo/style";
-
+import styled from 'styled-components'
+import { Paragrafo } from '../../components/Paragrafo/style'
 
 export const SidebarContainer = styled.div`
   text-align: center;

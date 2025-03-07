@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const List = styled.ul`
   display: grid;
@@ -11,5 +11,4 @@ export const List = styled.ul`
     column-gap: 0;
     row-gap: 16px;
   }
-
 `

@@ -1,5 +1,5 @@
-import styled, {  createGlobalStyle } from 'styled-components';
-import { Theme } from './themes/ligtht';
+import styled, { createGlobalStyle } from 'styled-components'
+import { Theme } from './themes/ligtht'
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -14,14 +14,14 @@ const GlobalStyle = createGlobalStyle`
 body {
 padding-top: 80px;
 padding-bottom: 80px;
-background-color: ${({ theme }) => ( theme as Theme ).corFundo};
+background-color: ${({ theme }) => (theme as Theme).corFundo};
 
 @media (max-width: 768px) {
   padding-top: 16px;
 }
 `
 
-export default GlobalStyle;
+export default GlobalStyle
 
 const Container = styled.div`
   max-width: 1024px;
@@ -32,8 +32,8 @@ const Container = styled.div`
   gap: 56px;
 
   @media (max-width: 768px) {
-  display: block;
-  padding: 0 16px;
+    display: block;
+    padding: 0 16px;
   }
 `
 export { Container }
