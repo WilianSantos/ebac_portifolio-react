@@ -1,9 +1,11 @@
+import Titulo from "../../components/Titulo"
 
 
-const Sdebar = () => (
+const Sidebar = () => (
   <aside>
     <img src="https://github.com/WilianSantos.png" />
+    <Titulo fontSize={20}>Wilian Santos</Titulo>
   </aside>
 )
 
-export default Sdebar
+export default Sidebar
