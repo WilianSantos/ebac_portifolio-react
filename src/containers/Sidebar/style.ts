@@ -3,11 +3,13 @@ import { Paragrafo } from "../../components/Paragrafo/style";
 
 
 export const SidebarContainer = styled.div`
-  display: block;
-  justify-content: center;
   text-align: center;
   position: sticky;
   top: 80px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
 `
 
 export const Descricao = styled(Paragrafo)`
@@ -18,9 +20,9 @@ export const Descricao = styled(Paragrafo)`
 export const BotaoTema = styled.button`
   border-radius: 12px;
   padding: 8px;
-  color: #eee;
+  color: ${({ theme }) => theme.corFundo};
   font-size: 10px;
   font-weight: bold;
-  background-color: #282A35;
+  background-color: ${({ theme }) => theme.corPrincipal};
   cursor: pointer;
 `

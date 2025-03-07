@@ -1,4 +1,5 @@
 import styled, {  createGlobalStyle } from 'styled-components';
+import { Theme } from './themes/ligtht';
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -13,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
 body {
 padding-top: 80px;
 padding-bottom: 80px;
+background-color: ${({ theme }) => ( theme as Theme ).corFundo};
 
 @media (max-width: 768px) {
   padding-top: 16px;

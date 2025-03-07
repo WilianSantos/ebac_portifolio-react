@@ -4,13 +4,13 @@ import Paragrafo from "../Paragrafo"
 import Titulo from "../Titulo"
 
 const Card = styled.div`
-  border: 1px solid #c1c1c1;
+  border: 1px solid ${({ theme }) => theme.corBorda};
   padding: 16px;
 `
 
 const ButtonLink = styled.a`
-  color: #fff;
-  background-color: #4476BF;
+  color: ${({ theme }) => theme.corFundo};
+  background-color: ${({ theme }) => theme.corFundoBotao};
   padding: 8px;
   display: inline-block;
   margin-top: 24px;
